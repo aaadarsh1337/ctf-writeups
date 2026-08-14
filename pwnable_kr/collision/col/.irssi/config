@@ -1,0 +1,24 @@
+servers = (
+  {
+    address = "irc2.netgarage.org";
+    chatnet = "Freenode";
+    port = "6667";
+    use_ssl = "no";
+    ssl_verify = "no";
+    autoconnect = "yes";
+  }
+);
+
+# I'm a freenode user all the way man
+chatnets = {
+  Freenode = {
+    type = "IRC";
+    autosendcmd = "/join #pwnable.kr";
+  };
+};
+
+# Channels I hang out in a lot. Change these to your own.
+channels = (
+  { name = "#pwnable.kr"; chatnet = "Freenode"; autojoin = "yes"; }
+);
+
