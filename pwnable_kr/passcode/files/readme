@@ -1,0 +1,5 @@
+The "passcode" is currently available via SSH, but it is also being dockerized.
+You can solve the exact same challenge inside the Ubuntu 22.04 Docker environment.
+
+If you connect to the dockerized port:
+Usage : nc 0 10004
