@@ -9,7 +9,7 @@ When we download the task files and extract them, we get two binaries
 
 Let's see what these do
 
-## angel_A
+### angel_A
 
 Running strings on the binary, we get link to a youtube video
 Duh, got rickrolled :)
@@ -31,7 +31,7 @@ Submitting the answer, it is correct!
 
 Now moving on to the next binary
 
-## angel_B
+### angel_B
 
 Running the binary, it asks for a magic word
 
