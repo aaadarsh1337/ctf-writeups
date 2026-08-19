@@ -1,3 +1,6 @@
+# tea-cash
+## Challenge: https://learn.cylabacademy.org/library/746
+
 Hello Hackers!
 Welcome to my writeup on the challenge `tea-cash` from picoCTF
 It is a medium challenge and in the category Binary Exploitation

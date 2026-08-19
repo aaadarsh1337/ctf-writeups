@@ -1,3 +1,6 @@
+# Binary Heaven
+## Room link: https://tryhackme.com/room/binaryheaven
+
 Hello Hackers! Welcome back to another writeup
 Today we will be looking at `Binary_Heaven` from TryHackMe
 So let's hop on without wasting much time
