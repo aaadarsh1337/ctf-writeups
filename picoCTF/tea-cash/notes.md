@@ -1,4 +1,3 @@
-```md
 Hello Hackers!
 Welcome to my writeup on the challenge `tea-cash` from picoCTF
 It is a medium challenge and in the category Binary Exploitation
@@ -11,12 +10,10 @@ We have the source and also the service to connect to
 Reading the source code, 
 User has to input an address, stored in the variable `expected`
 
-```
 ```c
 #define CHUNK_COUNT 6
 #define CHUNK_SIZE 0x80 
 ```
-```md
 --> The user input check runs 6 times
 --> Chunk size is set to 0x80
 
@@ -33,4 +30,3 @@ Writing the exploit using pwntools,
 We get the flag:
 
 `picoCTF{38703001eec3ec525642dfaf3281ba7a}`
-```

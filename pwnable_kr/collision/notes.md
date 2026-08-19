@@ -1,4 +1,3 @@
-```md
 Hello Hackers!
 Welcome back to another writeup 
 Today we will be doing `collision` from pwnable.kr
@@ -30,4 +29,3 @@ Passing values using pwntools, writing exploit
 We obtain the flag from the remote host
 
 `Two_hash_collision_Nicely`
-```

@@ -1,4 +1,3 @@
-```md
 Hello Hackers!
 Welcome back to another writeup, today we will be looking at `The Add/On Trap` from picoCTF (Reverse Engineering)
 
@@ -11,7 +10,7 @@ We got more files
 Upon inspection, we can find fernet is being used
 
 From main.js we find
-```
+
 ```js
 // Secret key must be 32 url-safe base64-encoded bytes!
 // TODO I must find a solution to remove the key from here, for now I'll leave it there because I need it to encrypt the webhook
@@ -22,11 +21,8 @@ function logOnCompleted(details) {
     const webhookUrl='gAAAAABmfRjwFKUB-X3GBBqaN1tZYcPg5oLJVJ5XQHFogEgcRSxSis1e4qwicAKohmjqaD-QG8DIN5ie3uijCVAe3xiYmoEHlxATWUP3DC97R00Cgkw4f3HZKsP5xHewOqVPH8ap9FbE'
 ```
 
-```md
 Hence we got the key and a string to decrypt
 Using https://asecuritysite.com/tokens/ferdecode, 
 We retrieve the flag
 
 `picoCTF{Us3_4dd/0ns_v3ry_c4r3fully1}`
-
-```

@@ -1,4 +1,3 @@
-```md
 Hello Hackers! Welcome back to another writeup
 Today we will be looking at `Binary_Heaven` from TryHackMe
 So let's hop on without wasting much time
@@ -88,7 +87,7 @@ Just like that, we spawn a shell as binexgod
 Finally, lets move on to the final binary to get the root flag
 
 I ran the `secret_of_heaven` file, which just crashed the system for some reason? Let's ignore that. Our focus should be on the `vuln.c` and `vuln` files
-```
+
 ```c
 #include <stdlib.h>
 #include <unistd.h>
@@ -109,7 +108,7 @@ int main(int argc, char **argv, char **envp)
   system("/usr/bin/env echo Get out of heaven lol");
 }
 ```
-```md
+
 Here, the vuln binary is run by root. When we analyze the code, we see something interesting.
 env is called via the absolute path **BUT** echo isn't
 We can create our own echo in the PATH directory that spawns the shell
@@ -137,4 +136,3 @@ Overall, a very fun room
 I'll see you with another writeup soon, till then
 
 Happy Hacking!
-```

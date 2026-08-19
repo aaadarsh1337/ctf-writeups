@@ -1,4 +1,3 @@
-```md
 Hello Hackers!
 
 Welcome back to another writeup on a pwnable.kr challenge
@@ -39,7 +38,7 @@ Then when it flushes, it doesnt know which destination to put it in because the 
 So if we just execute the flagread instead of fflush(), we can retrieve the flag
 
 Lets analyze the functions and addresses using `pwndbg`
-```
+
 ```asm
 0x08049000  _init
 0x08049040  __libc_start_main@plt
@@ -65,7 +64,7 @@ Lets analyze the functions and addresses using `pwndbg`
 0x080493c0  __stack_chk_fail_local
 0x080493d8  _fini
 ```
-```md
+
 When we use cyclic pattern as name, we find that SEGMENTATION FAULT occurs at 0x61616179 at 'yaaa'
 
 `cyclic -l yaaa
@@ -90,5 +89,3 @@ Another challenge down. We learnt about the implications caused by scanf, fflush
 See you with another writeup soon, till then
 
 Happy Hacking!
-
-```

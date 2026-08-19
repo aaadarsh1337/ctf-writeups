@@ -1,4 +1,3 @@
-```md
 # fd 
 Hello everyone, welcome to this series where i'll be providing writeups for all the challenges on pwnable.kr
 
@@ -14,7 +13,7 @@ Let's move all of it to our local machine
 `scp -P 2222 -r fd@pwnable.kr:/home/fd .`
 
 1. fd.c
-```
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -39,7 +38,7 @@ int main(int argc, char* argv[], char* envp[]){
 
 }
 ```
-```md
+
 The challenge hints us to learn about file descriptors
 --> In Linux, a file descriptor (FD) is a non-negative integer that serves as a unique per-process handle assigned by the kernel to manage any open input/output stream
 
@@ -72,11 +71,10 @@ Giving 4660 as arg, the program halts
 Entering `LETMEWIN` and pressing enter, we get good job
 
 Repeat the process on the target machine to reveal the flag
-```
+
 
 _________________________________
 
-```md
 # ALTERNATE APPROACH (DOES NOT RETRIEVE FLAG)
 
 This is not the way the developers intended this challenge to be solve, but we can basically modify registers to trigger the winning funtion
@@ -86,7 +84,7 @@ In gdb,
 `set disassembly-flavor intel`
 `set follow-fork-mode parent`                # for reading the flag, the binary invokes a child process where main() isnt defines --> error
 `disassemble main`
-```
+
 ```asm
    0x0000120d <+0>:	lea    ecx,[esp+0x4]
    0x00001211 <+4>:	and    esp,0xfffffff0
@@ -171,7 +169,7 @@ In gdb,
    0x0000130d <+256>:	lea    esp,[ecx-0x4]
    0x00001310 <+259>:	ret
 ```
-```md
+
 From the above and from the code, we can see exactly where the comparison takes place
 
 `0x000012a4 <+151>:	test   eax,eax`
@@ -182,7 +180,7 @@ Just trying to set eax=0 before the test to bypass the restrictions
 ### Get the address after running the file and breaking at main
 
 `0x565562a4 <+151>:	test   %eax,%eax`
-```
+
 ```bash
 (gdb) break *0x565562a4
 Breakpoint 2 at 0x565562a4
@@ -192,20 +190,19 @@ Continuing.
 Breakpoint 2, 0x565562a4 in main ()
 (gdb) set $eax=0
 ```
-```md
+
 Fingers crossed.....
 And boom
-```
+
 ```bash
 (gdb) continue
 Continuing.
 good job :)
 ```
 
-```md
+
 Again, this is not the intended way to do it, the challenge is supposed to teach you about FD
 But this is another vuln
 But since gdb isnt run as root, flag will say permission denied
 
 Happy Hacking :)
-```
