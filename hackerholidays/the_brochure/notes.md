@@ -1,5 +1,5 @@
 # Day 0 - The Brochure
-## Room: https://tryhackme.com/room/hh-thebrochure-081f3e36
+## Room: <https://tryhackme.com/room/hh-thebrochure-081f3e36>
 
 Hello Hackers!
 Welcome to this series of writeups for all the rooms in the TryHackMe Hacker Holidays event 2026

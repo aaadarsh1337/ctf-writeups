@@ -1,5 +1,5 @@
 # tea-cash
-## Challenge: https://learn.cylabacademy.org/library/746
+## Challenge: <https://learn.cylabacademy.org/library/746>
 
 Hello Hackers!
 Welcome to my writeup on the challenge `tea-cash` from picoCTF
