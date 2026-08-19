@@ -1,4 +1,3 @@
-```md
 Hello Hackers!
 Welcome to this series of writeups for all the rooms in the TryHackMe Hacker Holidays event 2026
 
@@ -24,4 +23,3 @@ Decoding it reveals the flag
 `THM{V3r@s_aCC0unt_h4s_b33n_f0und!}`
 
 Happy Hacking!
-```

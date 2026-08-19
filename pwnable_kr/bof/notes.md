@@ -1,4 +1,3 @@
-```md 
 Hello Hackers!
 
 Welcome back to another writeup from pwnable.kr
@@ -58,4 +57,3 @@ Writing exploit.py
 We get flag:
 
 `Daddy_I_just_pwned_a_buff3r!`
-```
