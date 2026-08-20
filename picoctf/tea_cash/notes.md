@@ -22,7 +22,7 @@ User has to input an address, stored in the variable `expected`
 
 Reading about heap exploitation and tcache, we find
 
-`Each thread gets its own TCACHE, hence the name “Thread-Local Cache”. It is used for quick allocation and deallocation of heap chunks during program execution. On a 64-bit system, the TCACHE is used for allocation sizes between the sizes of 16 bytes and 1024 bytes (excluding metadata) incrementing in 16-byte chunks (the minimum difference in allocation sizes). This leads a total of 64 TCACHE bins per program thread.`
+> Each thread gets its own TCACHE, hence the name “Thread-Local Cache”. It is used for quick allocation and deallocation of heap chunks during program execution. On a 64-bit system, the TCACHE is used for allocation sizes between the sizes of 16 bytes and 1024 bytes (excluding metadata) incrementing in 16-byte chunks (the minimum difference in allocation sizes). This leads a total of 64 TCACHE bins per program thread.
 
 Increment of 16 bytes, ie, headers of size 0x10 are present in between the freed chunk and the malloc chun
 ie, total diff = CHUNK_SIZE + 0x90
@@ -32,4 +32,4 @@ Writing the exploit using pwntools,
 
 We get the flag:
 
-`picoCTF{38703001eec3ec525642dfaf3281ba7a}`
+> picoCTF{38703001eec3ec525642dfaf3281ba7a}
