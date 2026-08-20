@@ -4,7 +4,7 @@
 Hello Hackers!
 
 Welcome back to another writeup on a pwnable.kr challenge
-Today we will be looking at `passcode`
+Today we will be looking at **passcode**
 
 The hint:
 
@@ -18,7 +18,7 @@ Let us read the source code
 
 From the source code, we find:
 
-`ha! mommy told me that 32bit is vulnerable to bruteforcing :)`
+> ha! mommy told me that 32bit is vulnerable to bruteforcing :)
 
 That is interesting. Maybe it has to do something with bruteforcing
 
@@ -40,7 +40,7 @@ What happens is that we enter out passcode1
 Then when it flushes, it doesnt know which destination to put it in because the given destination is not even an address
 So if we just execute the flagread instead of fflush(), we can retrieve the flag
 
-Lets analyze the functions and addresses using `pwndbg`
+Lets analyze the functions and addresses using **pwndbg**
 
 ```asm
 0x08049000  _init
@@ -70,22 +70,26 @@ Lets analyze the functions and addresses using `pwndbg`
 
 When we use cyclic pattern as name, we find that SEGMENTATION FAULT occurs at 0x61616179 at 'yaaa'
 
-`cyclic -l yaaa
+```bash
+cyclic -l yaaa
 Finding cyclic pattern of 4 bytes: b'yaaa' (hex: 0x79616161)
-Found at offset 96`
-
+Found at offset 96
+```
 Hence we found the  offset to be 96
 
 So we can use the GOT address of fflush and the address that gives us the flag
 And if we craft our exploit carefully we should be able to pwn this
 
---> NOTE: to dump GOT, use: `objdump -R passcode -M intel`
+--> NOTE: to dump GOT, use: 
+```bash 
+objdump -R passcode -M intel
+```
 
 Writing exploit.py (attached)
 
 We retrieve the flag!
 
-`s0rry_mom_I_just_ign0red_c0mp1ler_w4rning`
+> s0rry_mom_I_just_ign0red_c0mp1ler_w4rning
 
 Another challenge down. We learnt about the implications caused by scanf, fflush() and also about GOT addresses.
 

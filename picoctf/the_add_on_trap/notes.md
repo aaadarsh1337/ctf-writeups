@@ -25,7 +25,7 @@ function logOnCompleted(details) {
 ```
 
 Hence we got the key and a string to decrypt
-Using https://asecuritysite.com/tokens/ferdecode, 
+Using <https://asecuritysite.com/tokens/ferdecode>, 
 We retrieve the flag
 
-`picoCTF{Us3_4dd/0ns_v3ry_c4r3fully1}`
+> picoCTF{Us3_4dd/0ns_v3ry_c4r3fully1}

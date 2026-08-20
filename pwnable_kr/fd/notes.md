@@ -12,7 +12,9 @@ After login, we see our files
 
 Let's move all of it to our local machine 
 
-`scp -P 2222 -r fd@pwnable.kr:/home/fd .`
+```bash
+scp -P 2222 -r fd@pwnable.kr:/home/fd .
+```
 
 1. fd.c
 
@@ -44,24 +46,30 @@ int main(int argc, char* argv[], char* envp[]){
 The challenge hints us to learn about file descriptors
 --> In Linux, a file descriptor (FD) is a non-negative integer that serves as a unique per-process handle assigned by the kernel to manage any open input/output stream
 
-### The fd binary has SUID
+> **The fd binary has SUID**
 So it runs as root and we can read the file
 
-## Understanding the logic behind the code
+### Understanding the logic behind the code
 
-`int fd = atoi( argv[1] ) - 0x1234;`
+```c
+int fd = atoi( argv[1] ) - 0x1234;
+```
 
 The argument which we pass to the program, it's converted to its int equivalent (atoi) and then 0x1234 is subtracted from it
 
-`len = read(fd, buf, 32);`
+```c
+len = read(fd, buf, 32);
+```
 
 What this means: we are reading fd, and we are storing the first 32 bytes into the "buf" which is a user defined 32 byte buffer
 
-`if(!strcmp("LETMEWIN\n", buf))`
+```c
+if(!strcmp("LETMEWIN\n", buf))
+```
 
 strcmp compares two strings based off their ascii values. It returns 0 for true
 
-Since we can control the file descriptor here, set it to 0
+Since we can control the **file descriptor** here, set it to 0
 WHY: Because 0 is the FD for standard input
 ie, then we can just pass what the condition requires us to in order to obtain the flag
 
@@ -70,7 +78,7 @@ The int value of 0x1234 is 4660
 Giving 4660 as arg, the program halts
 --> It is waiting for our input
 
-Entering `LETMEWIN` and pressing enter, we get good job
+Entering **LETMEWIN** and pressing enter, we get good job
 
 Repeat the process on the target machine to reveal the flag
 
@@ -83,10 +91,11 @@ This is not the way the developers intended this challenge to be solve, but we c
 
 In gdb, 
 
-`set disassembly-flavor intel`
-`set follow-fork-mode parent`                # for reading the flag, the binary invokes a child process where main() isnt defines --> error
-`disassemble main`
-
+```bash
+set disassembly-flavor intel
+set follow-fork-mode parent                # for reading the flag, the binary invokes a child process where main() isnt defines --> error
+disassemble main
+```
 ```asm
    0x0000120d <+0>:	lea    ecx,[esp+0x4]
    0x00001211 <+4>:	and    esp,0xfffffff0
@@ -173,16 +182,16 @@ In gdb,
 ```
 
 From the above and from the code, we can see exactly where the comparison takes place
-
-`0x000012a4 <+151>:	test   eax,eax`
-
+```asm
+0x000012a4 <+151>:	test   eax,eax
+```
 here, the value of strcmp is being compared to 0 --> Strings match
 Just trying to set eax=0 before the test to bypass the restrictions
 
-### Get the address after running the file and breaking at main
-
-`0x565562a4 <+151>:	test   %eax,%eax`
-
+> Get the address after running the file and breaking at main
+```asm
+0x565562a4 <+151>:	test   %eax,%eax
+```
 ```bash
 (gdb) break *0x565562a4
 Breakpoint 2 at 0x565562a4
