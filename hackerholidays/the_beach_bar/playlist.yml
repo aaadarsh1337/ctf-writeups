@@ -1,0 +1,11 @@
+# Beach Bar jukebox playlist export
+playlist:
+  name: Sunset Session
+  vibe: golden hour
+  tracks:
+    - artist: Khruangbin
+      title: Maria Tambien
+    - artist: Men I Trust
+      title: Show Me How
+    - artist: Crumb
+      title: Locket

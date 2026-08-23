@@ -1,0 +1,70 @@
+# Nmap 7.99 scan initiated Sun Aug  2 13:47:13 2026 as: /usr/lib/nmap/nmap --privileged -sC -sV -vvv -A -oN fullscan 10.49.137.197
+adjust_timeouts2: packet supposedly had rtt of -689183 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -689183 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -767183 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -767183 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -177299 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -177299 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -181195 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -181195 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -222531 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -222531 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -693501 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -693501 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -191562 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -191562 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -191903 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -191903 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -661662 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -661662 microseconds.  Ignoring time.
+Nmap scan report for 10.49.137.197
+Host is up, received echo-reply ttl 62 (0.062s latency).
+Scanned at 2026-08-02 13:47:14 IST for 30s
+Not shown: 998 closed tcp ports (reset)
+PORT     STATE SERVICE REASON         VERSION
+22/tcp   open  ssh     syn-ack ttl 62 OpenSSH 9.6p1 Ubuntu 3ubuntu13.16 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 94:66:40:a5:73:b9:c7:94:10:57:7d:25:94:04:16:6c (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBAFWFfimtPgox+2im6z1dS9NQ6ogjGTFivmYWV6YBJnYplM2WKb9FBm66C5Ij9VUT9HJ0lYZRePDwGTv2BCKwaI=
+|   256 e4:80:b3:82:cb:7d:06:b9:24:ae:7b:59:46:e7:fd:e8 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMuIVc0ql1M20lYLtV3i8n+130XHdSp4vt6MGCWmkzkw
+8080/tcp open  http    syn-ack ttl 62 Werkzeug httpd 3.0.1 (Python 3.12.3)
+| http-methods: 
+|_  Supported Methods: GET HEAD OPTIONS
+| http-git: 
+|   10.49.137.197:8080/.git/
+|     Git repository found!
+|     Repository description: Unnamed repository; edit this file 'description' to name the...
+|_    Last commit message: initial Byte Lotus guest platform 
+|_http-title: Byte Lotus &mdash; Stay Noticed
+|_http-server-header: Werkzeug/3.0.1 Python/3.12.3
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.99%E=4%D=8/2%OT=22%CT=1%CU=36129%PV=Y%DS=3%DC=T%G=Y%TM=6A6EFD28
+OS:%P=x86_64-pc-linux-gnu)SEQ(SP=102%GCD=2%ISR=10F%TI=Z%CI=Z%TS=A)SEQ(SP=10
+OS:4%GCD=1%ISR=10A%TI=Z%CI=Z%TS=A)SEQ(SP=104%GCD=1%ISR=10B%TI=Z%CI=Z%TS=A)S
+OS:EQ(SP=106%GCD=1%ISR=10A%TI=Z%CI=Z%TS=A)SEQ(SP=107%GCD=1%ISR=106%TI=Z%CI=
+OS:Z%TS=A)OPS(O1=M4E8ST11NW9%O2=M4E8ST11NW9%O3=M4E8NNT11NW9%O4=M4E8ST11NW9%
+OS:O5=M4E8ST11NW9%O6=M4E8ST11)WIN(W1=F4B3%W2=F4B3%W3=F4B3%W4=F4B3%W5=F4B3%W
+OS:6=F4B3)ECN(R=Y%DF=Y%T=40%W=F507%O=M4E8NNSNW9%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=
+OS:O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD
+OS:=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0
+OS:%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1
+OS:(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI
+OS:=N%T=40%CD=S)
+
+Uptime guess: 24.078 days (since Thu Jul  9 11:55:58 2026)
+Network Distance: 3 hops
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 1723/tcp)
+HOP RTT      ADDRESS
+1   65.52 ms 192.168.128.1
+2   ...
+3   59.77 ms 10.49.137.197
+
+Read data files from: /usr/share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Aug  2 13:47:44 2026 -- 1 IP address (1 host up) scanned in 31.96 seconds

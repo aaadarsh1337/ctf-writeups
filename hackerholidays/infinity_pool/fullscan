@@ -1,0 +1,31 @@
+# Nmap 7.99 scan initiated Thu Aug  6 22:59:13 2026 as: /usr/lib/nmap/nmap --privileged -sC -sV -A -oN fullscan 10.48.156.111
+Nmap scan report for 10.48.156.111
+Host is up (0.072s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.18 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 79:43:54:95:eb:21:7b:8f:d1:6b:12:73:7a:92:50:79 (ECDSA)
+|_  256 05:bf:b4:44:ca:48:a8:98:96:a9:9b:1d:1f:e1:b0:ed (ED25519)
+80/tcp open  http    Gunicorn
+|_http-title: Byte Lotus &mdash; Stay Noticed
+| http-robots.txt: 2 disallowed entries 
+|_/internal/ /status
+|_http-server-header: gunicorn
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: specialized|general purpose|storage-misc
+Running (JUST GUESSING): Crestron 2-Series (86%), Linux 4.X|5.X (86%), HP embedded (85%)
+OS CPE: cpe:/o:crestron:2_series cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5 cpe:/h:hp:p2000_g3
+Aggressive OS guesses: Crestron XPanel control system (86%), Linux 4.15 - 5.19 (86%), HP P2000 G3 NAS device (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 3 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+1   67.32 ms 192.168.128.1
+2   ...
+3   73.56 ms 10.48.156.111
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Aug  6 22:59:47 2026 -- 1 IP address (1 host up) scanned in 33.57 seconds

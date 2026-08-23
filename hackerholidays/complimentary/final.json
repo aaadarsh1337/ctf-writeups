@@ -1,0 +1,122 @@
+{
+    "Items": [
+        {
+            "password": {
+                "S": "digitaldetox2026"
+            },
+            "location": {
+                "S": "25.2055,55.2733"
+            },
+            "notes": {
+                "S": "Booked the quiet room for his \"digital detox.\" Checked email twice since writing that."
+            },
+            "guest_id": {
+                "S": "guest-vibe"
+            },
+            "email": {
+                "S": "vibe@hackerholidays.thm"
+            },
+            "phone": {
+                "S": "+1-555-0193"
+            },
+            "name": {
+                "S": "Vibe (Move Fast & Break Things)"
+            }
+        },
+        {
+            "password": {
+                "S": "sunkissed88"
+            },
+            "location": {
+                "S": "25.2048,55.2708"
+            },
+            "notes": {
+                "S": "Posted 47 times in three days. Wants everything tagged #ByteLotus for the algorithm."
+            },
+            "guest_id": {
+                "S": "guest-lambo"
+            },
+            "email": {
+                "S": "lambo@hackerholidays.thm"
+            },
+            "phone": {
+                "S": "+1-555-0142"
+            },
+            "name": {
+                "S": "Lambo (@0xMia)"
+            }
+        },
+        {
+            "password": {
+                "S": "escalation_only"
+            },
+            "location": {
+                "S": "25.2048,55.2708"
+            },
+            "notes": {
+                "S": "If you're reading this, the wellness app's guest role can read every profile, not just its own. THM{fr33_app_fr33_d4t4!}"
+            },
+            "guest_id": {
+                "S": "guest-vip-042"
+            },
+            "email": {
+                "S": "vip042@hackerholidays.thm"
+            },
+            "phone": {
+                "S": "+1-555-0100"
+            },
+            "name": {
+                "S": "Guest VIP-042"
+            }
+        },
+        {
+            "password": {
+                "S": "haveyoutriedrestarting"
+            },
+            "location": {
+                "S": "25.2030,55.2690"
+            },
+            "notes": {
+                "S": "Filed three tickets about this app. All closed as \"resolved\" by VERA."
+            },
+            "guest_id": {
+                "S": "guest-patch"
+            },
+            "email": {
+                "S": "patch@hackerholidays.thm"
+            },
+            "phone": {
+                "S": "+1-555-0159"
+            },
+            "name": {
+                "S": "Patch (Have You Tried Turning It Off)"
+            }
+        },
+        {
+            "password": {
+                "S": "notmykeys1"
+            },
+            "location": {
+                "S": "25.2011,55.2701"
+            },
+            "notes": {
+                "S": "Checks his portfolio 34 times a day. Brought three devices for \"redundancy.\""
+            },
+            "guest_id": {
+                "S": "guest-ponzi"
+            },
+            "email": {
+                "S": "ponzi@hackerholidays.thm"
+            },
+            "phone": {
+                "S": "+1-555-0187"
+            },
+            "name": {
+                "S": "Ponzi (Satoshi_Probably)"
+            }
+        }
+    ],
+    "Count": 5,
+    "ScannedCount": 5,
+    "ConsumedCapacity": null
+}

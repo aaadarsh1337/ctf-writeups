@@ -1,0 +1,39 @@
+# Nmap 7.99 scan initiated Sun Aug  2 16:19:59 2026 as: /usr/lib/nmap/nmap --privileged -sC -sV -A -oN fullscan 10.48.158.139
+Nmap scan report for 10.48.158.139
+Host is up (0.074s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.18 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 88:aa:dd:ab:99:99:3c:b0:ec:eb:27:bc:5a:2f:e6:df (ECDSA)
+|_  256 6a:b6:b0:8b:ec:ff:aa:6b:0f:26:4b:eb:a2:87:ee:1e (ED25519)
+80/tcp open  http    Gunicorn
+|_http-server-header: gunicorn
+| http-title: Beach Bar // Sign in
+|_Requested resource was /login
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.99%E=4%D=8/2%OT=22%CT=1%CU=32270%PV=Y%DS=3%DC=T%G=Y%TM=6A6F20F6
+OS:%P=x86_64-pc-linux-gnu)SEQ(SP=102%GCD=2%ISR=108%TI=Z%CI=Z%II=I%TS=22)SEQ
+OS:(SP=107%GCD=1%ISR=10B%TI=Z%CI=Z%TS=21)SEQ(SP=107%GCD=1%ISR=10D%TI=Z%CI=Z
+OS:%II=I%TS=21)SEQ(SP=108%GCD=2%ISR=10C%TI=Z%CI=Z%II=I%TS=22)SEQ(SP=FD%GCD=
+OS:1%ISR=108%TI=Z%CI=Z%TS=21)OPS(O1=M4E8ST11NW9%O2=M4E8ST11NW9%O3=M4E8NNT11
+OS:NW9%O4=M4E8ST11NW9%O5=M4E8ST11NW9%O6=M4E8ST11)WIN(W1=F4B3%W2=F4B3%W3=F4B
+OS:3%W4=F4B3%W5=F4B3%W6=F4B3)ECN(R=Y%DF=Y%T=40%W=F507%O=M4E8NNSNW9%CC=Y%Q=)
+OS:T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=
+OS:0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T
+OS:6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+
+OS:%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK
+OS:=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 3 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 3389/tcp)
+HOP RTT      ADDRESS
+1   84.50 ms 192.168.128.1
+2   ...
+3   84.55 ms 10.48.158.139
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Aug  2 16:20:30 2026 -- 1 IP address (1 host up) scanned in 31.57 seconds
