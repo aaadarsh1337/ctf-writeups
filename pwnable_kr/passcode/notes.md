@@ -85,6 +85,8 @@ And if we craft our exploit carefully we should be able to pwn this
 objdump -R passcode -M intel
 ```
 
+![GOT](GOT.png)
+
 Writing exploit.py (attached)
 
 We retrieve the flag!

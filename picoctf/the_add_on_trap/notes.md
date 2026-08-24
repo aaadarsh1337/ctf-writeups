@@ -4,7 +4,7 @@
 Hello Hackers!
 Welcome back to another writeup, today we will be looking at `The Add/On Trap` from picoCTF (Reverse Engineering)
 
-The file provided is a .xpl file and its supposedly a browser extension
+The file provided is a .xpi file and its supposedly a browser extension
 
 --> We can unzip that too
 

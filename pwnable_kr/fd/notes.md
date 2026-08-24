@@ -82,7 +82,7 @@ Entering **LETMEWIN** and pressing enter, we get good job
 
 Repeat the process on the target machine to reveal the flag
 
-
+![flag](flag.png)
 _________________________________
 
 # ALTERNATE APPROACH (DOES NOT RETRIEVE FLAG)
