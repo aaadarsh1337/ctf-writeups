@@ -20,6 +20,6 @@ The posts have a base64 encoded string
 
 Decoding it reveals the flag
 
-> THM{V3r@s_aCC0unt_h4s_b33n_f0und!}
+> THM{...}
 
 Happy Hacking!
