@@ -1,5 +1,5 @@
 # Classic Passwd
-## Challenge Link: <https://tryhackme.com/room/classicpasswd>
+## Challenge: <https://tryhackme.com/room/classicpasswd>
 
 Hello Hackers!
 
