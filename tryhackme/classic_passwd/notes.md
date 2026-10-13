@@ -38,7 +38,7 @@ Analyzing the function, we can directly see the required username that yields th
 
 ![Flag](flag.png)
 
-> THM{65235128496}
+> THM{...}
 
 This was a fairly simple challenge, although rated medium.
 

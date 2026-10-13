@@ -69,4 +69,4 @@ Doing some math, we can find that sending 52 chars junk and then our addresss, w
 Writing exploit.py
 We get flag:
 
-> Daddy_I_just_pwned_a_buff3r!
+> Daddy_******_buff3r!

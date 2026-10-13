@@ -91,7 +91,7 @@ Writing exploit.py (attached)
 
 We retrieve the flag!
 
-> s0rry_mom_I_just_ign0red_c0mp1ler_w4rning
+> s0rry_******_w4rning
 
 Another challenge down. We learnt about the implications caused by scanf, fflush() and also about GOT addresses.
 

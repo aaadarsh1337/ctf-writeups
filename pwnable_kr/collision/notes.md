@@ -31,4 +31,4 @@ Passing values using pwntools, writing exploit
 
 We obtain the flag from the remote host
 
-> Two_hash_collision_Nicely
+> Two_********_Nicely

@@ -32,4 +32,4 @@ Writing the exploit using pwntools,
 
 We get the flag:
 
-> picoCTF{38703001eec3ec525642dfaf3281ba7a}
+> picoCTF{...}

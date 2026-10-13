@@ -58,7 +58,7 @@ Lets try to SSH using guardian:GOg0esGrrr!
 
 Guardian flag retrieved!
 
-> THM{crack3d_th3_gu4rd1an}
+> THM{...}
 
 Now we see our next binary in the home folder
 It is **SUID**, ie, running a shell from it will give us privesc
@@ -87,7 +87,7 @@ Just like that, we spawn a shell as binexgod
 
 ![binexgod_flag](binexgod.png)
 
-> THM{b1n3xg0d_pwn3d}
+> THM{...}
 
 Finally, lets move on to the final binary to get the root flag
 
@@ -130,7 +130,7 @@ Lets try
 
 Final flag is retrieved
 
-> THM{r00t_of_th3_he4v3n}
+> THM{...}
 
 Challenge complete!!
 
