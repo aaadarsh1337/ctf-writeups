@@ -1,5 +1,5 @@
 # dragon
-## Challenge: <https://pwnable.kr/play.php>
+## Challenge: <https://pwnable.kr/play>
 
 Hello Hackers!
 
