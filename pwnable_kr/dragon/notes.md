@@ -1,3 +1,9 @@
+---
+title: dragon
+difficulty: Rookiss
+date: 2026-08-30
+---
+
 # dragon
 ## Challenge: <https://pwnable.kr/play>
 

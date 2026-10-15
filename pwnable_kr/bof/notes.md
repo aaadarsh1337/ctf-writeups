@@ -1,3 +1,9 @@
+---
+title: bof
+difficulty: Toddler's Bottle
+date: 2026-08-20
+---
+
 # bof
 ## Challenge: <https://pwnable.kr/play>
 

@@ -1,3 +1,9 @@
+---
+title: Steganography
+difficulty: Hard
+date: 2026-10-08
+---
+
 # Steganography
 ## Challenge: <https://rerange.org/challenges/>
 

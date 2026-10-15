@@ -1,3 +1,9 @@
+---
+title: passcode
+difficulty: Toddler's Bottle
+date: 2026-08-25
+---
+
 # passcode
 ## Challenge: <https://pwnable.kr/play>
 

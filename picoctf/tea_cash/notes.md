@@ -1,3 +1,9 @@
+---
+title: tea-cash
+difficulty: Medium
+date: 2026-08-20
+---
+
 # tea-cash
 ## Challenge: <https://learn.cylabacademy.org/library/746>
 

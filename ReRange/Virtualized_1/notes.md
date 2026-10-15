@@ -1,3 +1,9 @@
+---
+title: Virtualized 1
+difficulty: Easy
+date: 2026-09-28
+---
+
 # Virtualized 1
 ## Challenge: <https://rerange.org/challenges/>
 

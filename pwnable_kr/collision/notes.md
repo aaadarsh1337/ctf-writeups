@@ -1,3 +1,9 @@
+---
+title: collision
+difficulty: Toddler's Bottle
+date: 2026-08-23
+---
+
 # collision
 ## Challenge: <https://pwnable.kr/play>
 

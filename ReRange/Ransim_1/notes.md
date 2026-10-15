@@ -1,3 +1,9 @@
+---
+title: Ransim 1
+difficulty: Medium
+date: 2026-10-14
+---
+
 # Ransim 1
 ## Challenge: <https://rerange.org/challenges/>
 

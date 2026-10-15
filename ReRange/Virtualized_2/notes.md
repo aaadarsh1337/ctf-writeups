@@ -1,3 +1,9 @@
+---
+title: Virtualized 2
+difficulty: Medium
+date: 2026-10-13
+---
+
 # Virtualized 2
 
 ## Challenge Link: <https://rerange.org/challenges/>

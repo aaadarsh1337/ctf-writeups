@@ -1,3 +1,9 @@
+---
+title: fd
+difficulty: Toddler's Bottle
+date: 2026-08-27
+---
+
 # fd 
 ## Challenge: <https://pwnable.kr/play>
 

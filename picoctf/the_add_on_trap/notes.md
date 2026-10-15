@@ -1,3 +1,9 @@
+---
+title: The Add/On Trap
+difficulty: Medium
+date: 2026-08-25
+---
+
 # The Add/On Trap
 ## Challenge: <https://learn.cylabacademy.org/library/697>
 

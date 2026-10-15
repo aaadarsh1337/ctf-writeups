@@ -1,3 +1,9 @@
+---
+title: Binary Heaven
+difficulty: Intermediate
+date: 2026-08-20
+---
+
 # Binary Heaven
 ## Room link: <https://tryhackme.com/room/binaryheaven>
 

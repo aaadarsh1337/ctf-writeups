@@ -1,3 +1,9 @@
+---
+title: REloaded
+difficulty: Easy
+date: 2026-09-18
+---
+
 # REloaded
 ## Challenge: <https://tryhackme.com/room/reloaded>
 

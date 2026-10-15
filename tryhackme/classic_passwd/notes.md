@@ -1,3 +1,9 @@
+---
+title: Classic Passwd
+difficulty: Medium
+date: 2026-09-19
+---
+
 # Classic Passwd
 ## Challenge: <https://tryhackme.com/room/classicpasswd>
 

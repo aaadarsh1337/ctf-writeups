@@ -1,3 +1,9 @@
+---
+title: Dropper 1
+difficulty: Easy
+date: 2026-09-14
+---
+
 # Dropper 1 (C)
 ## Challenge: <https://rerange.org/challenges/>
 
