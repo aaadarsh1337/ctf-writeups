@@ -6,7 +6,7 @@ date: 2026-10-13
 
 # Virtualized 2
 
-## Challenge Link: <https://rerange.org/challenges/>
+## Challenge: <https://rerange.org/challenges/>
 
 Hello Hacker!
 
