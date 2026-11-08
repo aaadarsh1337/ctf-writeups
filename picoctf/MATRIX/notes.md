@@ -4,7 +4,11 @@ difficulty: Hard
 date: 2026-11-08
 ---
 
-Hello Hackers! Welcome back to another writeup. Today we will be looking at MATRIX from picoCTF. This challenge was suggested to me by my good friend [mooofin](https://mooofin.github.io/portfolio/index.html). He does some really cool stuff so you should definately check his work out. 
+Hello Hackers! 
+
+Welcome back to another writeup. Today we will be looking at MATRIX from picoCTF. 
+
+This challenge was suggested to me by my good friend [mooofin](https://mooofin.github.io/portfolio/index.html). He does some really cool stuff so you should definitely check his work out. 
 
 Moving on to the challenge, it is `hard` rated so let's see what we are dealing with. 
 
