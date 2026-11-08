@@ -4,6 +4,9 @@ difficulty: Hard
 date: 2026-11-08
 ---
 
+# MATRIX
+## Challenge: <https://learn.cylabacademy.org/library/221>
+
 Hello Hackers! 
 
 Welcome back to another writeup. Today we will be looking at MATRIX from picoCTF. 
