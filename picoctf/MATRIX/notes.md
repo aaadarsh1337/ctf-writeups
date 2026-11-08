@@ -52,7 +52,7 @@ We have a lot of opcodes to map. It is not very beneficial to explain each opcod
 
 Simply, what a custom VM means is that the program is trying to run a mini computer of its own inside, instead of executing like a normal binary. This is a very common practice for obfuscating code and making lives harder for reverse engineers like us. 
 
-Basically we will be able to trace a big blob of bytescodes, and our program iterates through these. Each of them has a special meaning. And the program basically only tells us what to do when a specific bytecode is encountered. 
+Basically we will be able to trace a big blob of bytecodes, and our program iterates through these. Each of them has a special meaning. And the program basically only tells us what to do when a specific bytecode is encountered. 
 
 Being able to read assembly is a very essential skill you need to be able to properly map each of these. 
 
@@ -61,11 +61,11 @@ Set a break point for the first opcode, observe the registers as the execution c
 
 I have written and attached a full disassembler.py along with this writeup. It has some missing opcodes, but that was because our flow of execution never encounters those, and hence its a waste of time to map those; but its worth knowing. 
 
-When i tried running the disassembler.py, volia! we mimic the binary. We get the welcome prints and also the 'eaten by a grue' message. 
+When i tried running the disassembler.py, voila! we mimic the binary. We get the welcome prints and also the 'eaten by a grue' message. 
 
-What i also did for each opcode is that i made it write the instruction to file called `assembly` which is attached here as well. Mind you, this is not an exact assembly file with the correct synthax and all. It is just my implementation to understand whats really going on in the VM. 
+What i also did for each opcode is that i made it write the instruction to file called `assembly` which is attached here as well. Mind you, this is not an exact assembly file with the correct syntax and all. It is just my implementation to understand whats really going on in the VM. 
 
-The next part is just reading the assembly file and understanding whats happeneing. 
+The next part is just reading the assembly file and understanding whats happening. 
 
 The beginning of the file is all the printing logic. 
 
@@ -107,7 +107,7 @@ POP <0xc0>
 PUSH 0xfb
 ```
 
-We can clearly see interesing SUB commands: `0x75` `0x64` `0x6c` & `0x72` which directly correspond to ASCII `u`, `d`, `l` & `r`. 
+We can clearly see interesting SUB commands: `0x75` `0x64` `0x6c` & `0x72` which directly correspond to ASCII `u`, `d`, `l` & `r`. 
 That is a very good find. It is navigation of some sort. Let's read further. 
 
 Our next observation is that 0xfb means we're done. It is the `JMP` that prints the grue text.
@@ -146,9 +146,9 @@ A repeating pattern, in the multiples of 4. And this pattern continues for 1024 
 
 The bytecodes in that region, I saved and attached along (`mazehex`)
 
-Since its a maze, we can assume its dimentions. Since each block is 4 bytes, it gives is total of 1024/4 = 256 blocks. Assuming the most plausible combination, it is a 16x16 maze. This is purely a guess, you can try stuff like 32x8, etc. But 16x16 is what i chose. 
+Since its a maze, we can assume its dimensions. Since each block is 4 bytes, it gives us total of 1024/4 = 256 blocks. Assuming the most plausible combination, it is a 16x16 maze. This is purely a guess, you can try stuff like 32x8, etc. But 16x16 is what i chose. 
 
-Lets write a small python script that prints this in a clean form. We can observe 5 unique blocks. I just named then A, B, C, D and E at first, just too see what we were working with. And BOOM. It was a proper maze, with walls, end point and walkable spaces. BUT it still had two interesting blocks, which i didnt know what they did. 
+Lets write a small python script that prints this in a clean form. We can observe 5 unique blocks. I just named them A, B, C, D and E at first, just to see what we were working with. And BOOM. It was a proper maze, with walls, end point and walkable spaces. BUT it still had two interesting blocks, which i didnt know what they did. 
 
 Again, interesting. Let's try to understand whats happening, which is not very hard because of our disassembler. We could just put in the directions to go to each of those and see whats changing in our assembly. 
 
@@ -158,11 +158,11 @@ Let's just try to spam the health+ and then go on solving the maze?
 
 `rrrrrlrlrlrlrlrlrlrlrlrlrlrlrlrllddddddlddrrddrrrdrddrruuuruuuuuuurrddddddddlddrd`
 
-Volia! We got the congratulations print
+Voila! We got the congratulations print
 
 ![solved](solve.png)
 
-Well the challenge is already solves, but lets try reducing the number of `lr` until we die. 
+Well the challenge is already solved, but lets try reducing the number of `lr` until we die. 
 
 With trial and error, we can conclude that 
 
@@ -176,7 +176,7 @@ What this tells us?
 
 Lets now submit this to the remote server and boom :)) we have successfully completed this challenge. 
 
-This was definately a very very fun challenge. Even though picoCTF challenges are known to be more on the easier side, this one definately made me work. I took multiple days to solve it, especially because of the custom VM (which was probably the biggest takeaway from this challenge) and also the fact that these type of challenges are not very commonly seen. 
+This was definitely a very very fun challenge. Even though picoCTF challenges are known to be more on the easier side, this one definitely made me work. I took multiple days to solve it, especially because of the custom VM (which was probably the biggest takeaway from this challenge) and also the fact that this type of challenges are not very commonly seen. 
 
 I hope you learnt a thing or two from this writeup, because I surely did. 
 
